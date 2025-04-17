@@ -1,0 +1,891 @@
+[
+  {
+      "kategori": "Barn & Unga",
+      "organisationer": [
+        {
+            "namn": "Rädda Barnen",
+            "url": "https://www.raddabarnen.se/",
+            "beskrivning": "Arbetar för barns rättigheter i Sverige och världen.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhHyl2M5G9NBVs2f4MwGETpydZn_YlG-vT5_wcsaqoerj6lEmSbeLfCFNYcJneu5IQt8&usqp=CAU"
+        },
+        {
+            "namn": "Barncancerfonden",
+            "url": "https://www.barncancerfonden.se/",
+            "beskrivning": "Finansierar forskning för att bekämpa barncancer.",
+            "bild": "https://ssvkalmar.com/wp-content/uploads/2019/05/barncancer.png"
+        },
+        {
+            "namn": "SOS Barnbyar",
+            "url": "https://sos-barnbyar.se/",
+            "beskrivning": "Skapar en trygg framtid för barn som förlorat sina föräldrar.",
+            "bild": "https://sos-barnbyar.se/app/uploads/2024/09/cropped-SOSBarnbyar_symbol_RGB-512x504.png"
+        },
+        {
+            "namn": "Min Stora Dag",
+            "url": "https://minstoradag.org/",
+            "beskrivning": "Ger allvarligt sjuka barn en minnesvärd upplevelse.",
+            "bild": "https://minstoradag.org/wp-content/uploads/2019/09/minstoradag-logo-rgb-1120x922.png"
+        },
+        {
+            "namn": "Maskrosbarn",
+            "url": "https://maskrosbarn.org/",
+            "beskrivning": "Stöder unga som växer upp i familjer med missbruk eller våld.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnBMS8ESl6HjK-bVJWtlq5PwNQ28UafdQNNg&s"
+        },
+        {
+            "namn": "ECPAT",
+            "url": "https://ecpat.se/",
+            "beskrivning": "Jobbar för att stoppa sexuell exploatering av barn.",
+            "bild": "https://upload.wikimedia.org/wikipedia/en/thumb/1/19/ECPAT_logo.svg/1200px-ECPAT_logo.svg.png"
+        },
+        {
+            "namn": "Berättarministeriet",
+            "url": "https://www.berattarministeriet.se/om-berattarministeriet/?_gl=1*1eitv7i*_up*MQ..*_ga*MTY2OTY0MjU5Ny4xNzQzMDU3NTE5*_ga_Q74KVB1M3S*MTc0MzA1NzUxOC4xLjEuMTc0MzA1NzYyNC4wLjAuMA..",
+            "beskrivning": "Stödjer barn att utveckla sina berättelser och självförtroende.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIv6a7RHV4ttB_mMpoAhx51eSAHHpgFYLqmQ&s"
+        },
+        {
+            "namn": "Ungt Ledarskap, ett projekt av Scouterna",
+            "url": "https://www.scouterna.se/om-oss/projekt/ungt-ledarskap/",
+            "beskrivning": "Utvecklar ungdomars ledarskapsförmåga genom scouting.",
+            "bild": "https://www.insamlingskontroll.se/wp-content/uploads/2021/06/Ungt-Ledarskap.png"
+        },
+        {
+            "namn": "Friends",
+            "url": "https://friends.se/",
+            "beskrivning": "Motverkar mobbning och främjar en trygg skolmiljö.",
+            "bild": "https://www.hjarnfonden.se/uploads/2018/11/Friends_POS_PNG.png"
+        },
+        {
+            "namn": "Bris",
+            "url": "https://www.bris.se/",
+            "beskrivning": "Stödjer barn och unga som har det svårt eller känner sig ensamma.",
+            "bild": "https://storage.invitepeople.com/10802/1047561/Bris_bla_fri.png"
+        },
+        {
+            "namn": "PLAN Sverige",
+            "url": "https://plan.se/",
+            "beskrivning": "Arbetar för barns rättigheter och jämställdhet världen över.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMJG6d14jSyyhsDmbT726vpKzMWW31hhas8A&s"
+        },
+        {
+            "namn": "Barnfonden",
+            "url": "https://www.barnfonden.se/",
+            "beskrivning": "Stödjer barns rätt till en bättre framtid genom utbildning och hälsovård.",
+            "bild": "https://barnfonden.se/wp-content/uploads/2018/05/cropped-barnfonden_symbol_rgb-2.png"
+        },
+        {
+            "namn": "Rädda Barnen Malmö",
+            "url": "https://www.raddabarnen.se/lokalforeningar/skane/malmo/",
+            "beskrivning": "Lokal verksamhet för barns rättigheter och skydd i Malmö.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2Gz71QvSMAbS4VDltX2nox-6OedLsJv9rg&s"
+        },
+        {
+            "namn": "Erikshjälpen",
+            "url": "https://erikshjalpen.se/",
+            "beskrivning": "Stödjer utsatta människor i Sverige och internationellt.",
+            "bild": "https://erikshjalpen.se/app/uploads/2023/03/ERIKSHJALPEN_Logotyp_RGB.png"
+        },
+        {
+            "namn": "Majblomman",
+            "url": "https://www.majblomman.se/",
+            "beskrivning": "Arbetar för barn som lever i ekonomisk utsatthet i Sverige.",
+            "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Majblomman_2024.svg/2048px-Majblomman_2024.svg.png"
+        },
+        {
+            "namn": "Compassion",
+            "url": "https://www.compassion.se/",
+            "beskrivning": "Stödjer barn i utsatta livssituationer och hjälper till med utbildning och hälsovård.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcxUbNi8jESc_vLM34AY0S-_FTOfXc1FTxg&s"
+        },
+        {
+            "namn": "Mentor Sverige",
+            "url": "https://mentorsverige.se/",
+            "beskrivning": "Stödjer ungdomar genom mentorskap för att nå sina mål och drömmar.",
+            "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/mentor_logo_low_rgb66.png"
+        },
+        {
+            "namn": "Reach for Change",
+            "url": "https://reachforchange.org/",
+            "beskrivning": "Stödjer sociala entreprenörer för att skapa långsiktig förändring för barn och unga.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAfDQsFc_wGwahDSk8fL_B1ura6RyClr88jA&s"
+        },
+        {
+            "namn": "Star for Life",
+            "url": "https://starforlife.se/",
+            "beskrivning": "Skapar möjligheter för unga i Sydafrika att utvecklas och skapa bättre framtidsutsikter.",
+            "bild": "https://media.licdn.com/dms/image/v2/C4E0BAQE7GRn6aRptXw/company-logo_200_200/company-logo_200_200/0/1643981956268/star_for_life_logo?e=2147483647&v=beta&t=MwYPUEPtIsSSeB4ho2enD65I4OmfCPEYC64mIiS6SF8"
+        },
+        {
+            "namn": "Skandinaviska barnmissionen",
+            "url": "https://www.bmission.se/",
+            "beskrivning": "Arbetar för barns rätt till en trygg uppväxt och utbildning i utsatta områden.",
+            "bild": "https://barnmissionen.se/wp-content/uploads/2019/05/Logo-Barnmissionen-CMYK-liggande-1024x167.png"
+        },
+        {
+            "namn": "Childhood",
+            "url": "https://childhood.org/",
+            "beskrivning": "Fokuserar på att stoppa barnmisshandel och ge barn en bättre framtid.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIluEAZsUTQXZgFcD_pu-W4fHBQnNe42xwjsTjaZEqBeoKNp322siRTYCtliayxz9xIQ&usqp=CAU"
+        },
+        {
+            "namn": "New Life Mission",
+            "url": "https://newlifemission.se/",
+            "beskrivning": "Arbetar för att ge barn och familjer i utsatta områden en chans till ett bättre liv.",
+            "bild": "https://newlifemission.se/wp-content/uploads/2023/09/NLM-LogoTAG_svart_160px.png"
+        },
+        {
+            "namn": "Fryshuset",
+            "url": "https://www.fryshuset.se/",
+            "beskrivning": "Stödjer unga att hitta sin väg i livet genom utbildning, projekt och gemenskap.",
+            "bild": "https://api.fryshuset.se/wp-content/uploads/2024/06/Fryshuset_logo_rod-750x98.png"
+        }
+        
+      ]
+  },
+  {
+        "kategori": "Miljö & Natur",
+        "organisationer": [
+          {
+            "namn": "WWF Världsnaturfonden",
+            "url": "https://www.wwf.se/",
+            "beskrivning": "Arbetar globalt för att skydda naturen och de arter som hotas av mänsklig påverkan.",
+            "bild": "https://www.pngmart.com/files/23/Wwf-Logo-PNG-Photos.png"
+          },
+          {
+            "namn": "Naturskyddsföreningen",
+            "url": "https://www.naturskyddsforeningen.se/",
+            "beskrivning": "Jobbar för att bevara biologisk mångfald och minska människans påverkan på miljön.",
+            "bild": "https://skane.naturskyddsforeningen.se/wp-content/uploads/sites/106/2017/04/cropped-Logo-symbol-gron.png"
+          },
+          {
+            "namn": "Greenpeace",
+            "url": "https://www.greenpeace.org/sweden/",
+            "beskrivning": "Kämpar för en grönare och mer rättvis värld genom att driva kampanjer för att skydda miljön.",
+            "bild": "https://www.postkodlotteriet.se/images/18.5586bb8716b89c0bc0ff81/1561709652960/Greenpeace-logo.png"
+          },
+          {
+            "namn": "Håll Sverige Rent",
+            "url": "https://hsr.se/",
+            "beskrivning": "Arbetar för att minska nedskräpning och skydda den svenska naturen.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLjl0gn_556Xib8yPNbi9NmCKcKYY5Iwzfw&s"
+          },
+          {
+            "namn": "Baltic Waters",
+            "url": "https://balticwaters.org/",
+            "beskrivning": "Fokuserar på att skydda Östersjöns miljö och förbättra vattenkvaliteten.",
+            "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLcOxKVJYUSxoMw9tC8je8eYAJ0HYKT3rUFw&s"
+          },
+          {
+            "namn": "Vi Skogen",
+            "url": "https://www.viskogen.se/",
+            "beskrivning": "Arbetar för att bekämpa fattigdom genom att plantera träd och skapa hållbara livsmedelsförsörjningar.",
+            "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/vi-skogen_logo2013_rgb.png"
+          },
+          {
+            "namn": "Skydda skogen",
+            "url": "https://skyddaskogen.se/",
+            "beskrivning": "Verkar för att bevara Sveriges naturskogar och skydda den biologiska mångfalden.",
+            "bild": "https://postkodstiftelsen.se/wp-content/uploads/2023/03/skydda_skogen_se.jpg"
+          },
+          {
+            "namn": "Peace Parks Foundation",
+            "url": "https://www.peaceparks.org/",
+            "beskrivning": "Förespråkar och stöder skyddade områden som kopplar samman världens vilda djur i fredliga zoner.",
+            "bild": "https://www.peaceparkstv.com/wp-content/uploads/2021/03/PP-Logo-Mark.png"
+          },
+          {
+            "namn": "ChemSec",
+            "url": "https://chemsec.org/",
+            "beskrivning": "Jobbar för att minska användningen av farliga kemikalier och främja hållbar kemikaliehantering.",
+            "bild": "https://media.licdn.com/dms/image/v2/C4D0BAQGsgH5mwLWHGA/company-logo_200_200/company-logo_200_200/0/1631325131005?e=2147483647&v=beta&t=-L8FYvPAhjN9sQZ-ARJq37QPPMQ15yRfOOMjJkDhRiQ"
+          }
+        ]
+  },
+  {
+    "kategori": "Olycksförebyggande arbete",
+    "organisationer": [
+      {
+        "namn": "Sjöräddningssällskapet",
+        "url": "https://www.sjoraddning.se/",
+        "beskrivning": "Ideell organisation som räddar liv till sjöss genom snabba och effektiva räddningsinsatser längs Sveriges kuster.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_the_SSRS.svg/640px-Flag_of_the_SSRS.svg.png"
+      },
+      {
+        "namn": "Livräddningssällskapet",
+        "url": "https://www.livraddningssallskapet.se/",
+        "beskrivning": "Arbetar för att förhindra drunkningsolyckor genom utbildning och informationskampanjer om vattensäkerhet.",
+        "bild": "https://svenskalivraddningssallskapet.se/slscontent/uploads/2022/10/sls.png"
+      }
+    ]
+  },
+  {
+    "kategori": "Sjukvård & Forskning",
+    "organisationer": [
+      {
+        "namn": "Cancerfonden",
+        "url": "https://www.cancerfonden.se/",
+        "beskrivning": "Finansierar cancerforskning, sprider kunskap och påverkar beslutsfattare för att besegra cancer.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLgdmPcfRP1MMGupfgjqy6vJoik376yIAKA&s"
+      },
+      {
+        "namn": "Hjärt-Lungfonden",
+        "url": "https://www.hjart-lungfonden.se/",
+        "beskrivning": "Stödjer forskning inom hjärt-, kärl- och lungsjukdomar för att rädda liv och förbättra hälsan.",
+        "bild": "https://yt3.googleusercontent.com/AsSP50X5Tg7lnupedMeasQWXPwg2yXSZ0tuuqjNzwrPfvUl2GwtP3i7rF595n5YGZirfMUhElFU=s900-c-k-c0x00ffffff-no-rj"
+      },
+      {
+        "namn": "Hjärnfonden",
+        "url": "https://www.hjarnfonden.se/",
+        "beskrivning": "Finansierar forskning om hjärnan och olika neurologiska sjukdomar, som Alzheimer, stroke och psykisk ohälsa.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZymP9889DaJYB-rfzmFV7uI3985uMKGMZg&s"
+      },
+      {
+        "namn": "Alzheimerfonden",
+        "url": "https://www.alzheimerfonden.se/",
+        "beskrivning": "Stödjer forskning och sprider kunskap om Alzheimer och andra demenssjukdomar.",
+        "bild": "https://seniorval.se/sites/default/files/styles/company_logo/public/2022-12/alzheimerfonden_huvud_gul.gif?itok=QquiLOPH"
+      },
+      {
+        "namn": "Diabetesförbundet",
+        "url": "https://www.diabetes.se/",
+        "beskrivning": "Arbetar för att förbättra villkoren för personer med diabetes genom stöd, kunskap och politiskt påverkansarbete.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqsdVrnb2f9PCSloJnBAaTIUg8ff7xGtUiJw&s"
+      },
+      {
+        "namn": "Bröstcancerförbundet",
+        "url": "https://brostcancerforbundet.se/",
+        "beskrivning": "Stödjer forskning och ger stöd till personer som lever med eller drabbats av bröstcancer.",
+        "bild": "https://media.apotea.se/product-images/XL/brostcancerforbundet-digitalt-rosa-band-0.jpg"
+      },
+      {
+        "namn": "Prostatacancerförbundet",
+        "url": "https://prostatacancerforbundet.se/",
+        "beskrivning": "Jobbar för ökad kunskap, stöd och forskning kring prostatacancer.",
+        "bild": "https://media.apotea.se/product-images/XL/prostatacancerforbundet-digitala-bla-bandet-0.jpg"
+      },
+      {
+        "namn": "Blodcancerförbundet",
+        "url": "https://blodcancerforbundet.se/",
+        "beskrivning": "Ger stöd till blodcancerdrabbade och finansierar forskning.",
+        "bild": "https://yt3.googleusercontent.com/wVP7v4AzgJLaVkKNw36Z-8HM1Lk90_M0ZWP99CTcy87aaEsA3c0ZhW5RPRc1w-6yPnouz9qhlg=s900-c-k-c0x00ffffff-no-rj"
+      },
+      {
+        "namn": "Reumatikerförbundet",
+        "url": "https://www.reumatiker.se/",
+        "beskrivning": "Förbättrar livet för personer med reumatiska sjukdomar och bidrar till forskning.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSRXxT20Uhp08egvPagmnPFWoya7_S9uesng&s"
+      },
+      {
+        "namn": "Operation Smile",
+        "url": "https://www.operationsmile.se/",
+        "beskrivning": "Ger kostnadsfria operationer till barn med läpp-, käk- och gomspalt i låginkomstländer.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFv5ytQE0ydllf0iB-t3xVM6vaFxa6-1NF2w&s"
+      },
+      {
+        "namn": "Barndiabetesfonden",
+        "url": "https://www.barndiabetesfonden.se/",
+        "beskrivning": "Finansierar forskning om typ 1-diabetes hos barn och ungdomar.",
+        "bild": "https://media.licdn.com/dms/image/v2/C560BAQFVmS10PoqBmA/company-logo_200_200/company-logo_200_200/0/1630592355864/barndiabetesfonden_logo?e=2147483647&v=beta&t=dbLS42EbSY2c0o1lu9_qw0YH1j-dXEKOBYwDy8VZ3Ns"
+      },
+      {
+        "namn": "Diabetes Wellness",
+        "url": "https://diabeteswellness.se/",
+        "beskrivning": "Stödjer forskning och sprider kunskap om diabetes, särskilt typ 2.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmuL7BFZ6i7XtnOW2_vGspUcyulSENAQoupw&s"
+      },
+      {
+        "namn": "Cancerforskningsfonden Norrland",
+        "url": "https://cancerforskningsfondennorrland.se/",
+        "beskrivning": "Stödjer cancerforskning i Norrland genom ekonomiska bidrag till forskningsprojekt.",
+        "bild": "https://cancerforskningsfonden.se/wp-content/uploads/2024/05/1080-x-1080-rak-Cancerforskningsfonden-i-Norrland.jpg"
+      },
+      {
+        "namn": "Sällskapet för Medicinsk Forskning (SMF)",
+        "url": "https://smf.se/",
+        "beskrivning": "Stödjer forskare i Sverige som driver medicinsk forskning av hög kvalitet.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVp9G9i2BaUhjxL7249546M2mpYIA6mmxEQ&s"
+      },
+      {
+        "namn": "Demensfonden",
+        "url": "https://demensfonden.se/",
+        "beskrivning": "Stödjer forskning och kunskapsspridning om demenssjukdomar.",
+        "bild": "https://impro.usercontent.one/appid/oneComWsb/domain/demensforeningenkalmar.se/media/demensforeningenkalmar.se/onewebmedia/logga%20demensf%C3%B6reningen___serialized1.jpg?etag=%22f99d-63d295de%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=450%2B299&quality=85"
+      },
+      {
+        "namn": "HjärtLung",
+        "url": "https://www.hjartlung.se/",
+        "beskrivning": "Jobbar med livsstilsförändringar och stöd till personer med hjärt- och lungsjukdomar.",
+        "bild": "https://www.funktionsrattuppsala.se/wp-content/uploads/2023/08/hjartlung.jpg"
+      },
+      {
+        "namn": "CancerRehabFonden",
+        "url": "https://cancerrehab.se/",
+        "beskrivning": "Erbjuder rehabilitering för cancerdrabbade som avslutat sin behandling.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrupmhiC2MZJcdbtdYrxw3WmTiBoVE8NDtw&s"
+      }
+    ]
+  },
+  {
+    "kategori": "Psykisk hälsa & Socialt stöd",
+    "organisationer": [
+      {
+        "namn": "Mind",
+        "url": "https://mind.se/",
+        "beskrivning": "Arbetar för psykisk hälsa genom stödlinjer, utbildning och opinionsbildning.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Mind_logotyp.png"
+      },
+      {
+        "namn": "Män för Jämställdhet",
+        "url": "https://mfj.se/",
+        "beskrivning": "Jobbar för att stoppa mäns våld genom att främja jämställdhet och utveckla nya mansroller.",
+        "bild": "https://mfj.se/img/asset/YXNzZXRzL2ltYWdlcy9icmFuZGluZy9NQU4tbG9nb3R5cC1zdmFydC11dGFuLXRhZ2xpbmUtaS1lbi1rdmFkcmF0LnBuZw==?p=seo_pro_og&s=e3b3822556b74a264dfc9126a9074162"
+      },
+      {
+        "namn": "Empatus Fredriksdal",
+        "url": "https://empatus.se/",
+        "beskrivning": "Erbjuder stöd och aktiviteter för barn och unga i utsatthet, främst i Skåne.",
+        "bild": "https://emmpatusfredriksdal.se/wp-content/uploads/2023/12/logo-fredriksdal_high-1-1536x349.jpg"
+      },
+      {
+        "namn": "Suicide Zero",
+        "url": "https://suicidezero.se/",
+        "beskrivning": "Arbetar för att radikalt minska självmorden genom kunskapsspridning och påverkan.",
+        "bild": "https://suicidezero.se/wp-content/uploads/2023/11/sz-logotype.jpg"
+      }
+    ]
+  },
+  {
+    "kategori": "Funktionsvariation & Inkludering",
+    "organisationer": [
+      {
+        "namn": "Synskadades Riksförbund",
+        "url": "https://www.srf.nu/",
+        "beskrivning": "Arbetar för att personer med synnedsättning ska kunna leva ett jämlikt och självständigt liv.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1b_mevh8kWc5gBkujj-YHsA68_a9X4tzlxQ&s"
+      },
+      {
+        "namn": "Hörselskadades Riksförbund",
+        "url": "https://www.hrf.se/",
+        "beskrivning": "Jobbar för ett samhälle där hörselskadade har full delaktighet och jämlikhet.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDrDsCGPv6Z444Np0efQFzjC257LNt5eEsFmGAeH1Q1I6ZSrtQ52-vAS5pwAGLq7kvStM&usqp=CAU"
+      },
+      {
+        "namn": "Neuroförbundet",
+        "url": "https://neuro.se/",
+        "beskrivning": "Stödjer personer med neurologiska diagnoser och arbetar för vård, stöd och forskning.",
+        "bild": "https://neuro.se/media/7724/neuronen.png?crop=0,0.0000000000000001191415092285,0,0&cropmode=percentage&width=830&height=440&rnd=132252986180000000"
+      },
+      {
+        "namn": "Autism Sverige",
+        "url": "https://www.autism.se/",
+        "beskrivning": "Riksorganisation som verkar för ökad förståelse och bättre livsvillkor för personer med autism.",
+        "bild": "https://www.autism.se/media/2vxe2f4l/om-autism.png?anchor=center&mode=crop&width=360&height=225&rnd=133428103899070000"
+      },
+      {
+        "namn": "MyRight",
+        "url": "https://myright.se/",
+        "beskrivning": "Svensk funktionsrättsorganisation som arbetar internationellt för rättigheter för personer med funktionsnedsättning.",
+        "bild": "https://myright.se/wp-content/uploads/2019/03/Myright_logo_no_text.png"
+      },
+      {
+        "namn": "Riksförbundet FUB",
+        "url": "https://www.fub.se/",
+        "beskrivning": "Arbetar för att personer med intellektuell funktionsnedsättning ska kunna leva ett gott liv.",
+        "bild": "https://mnd-assets.mynewsdesk.com/image/upload/c_fill,dpr_auto,f_auto,g_auto,h_250,q_auto:good,w_250/bifv2pwc7chyw4uih9o9"
+      },
+      {
+        "namn": "Parasportförbundet",
+        "url": "https://www.parasport.se/",
+        "beskrivning": "Främjar idrott för personer med funktionsnedsättning och arbetar för ett inkluderande idrottssamhälle.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2020/04/parasport_rgb_logo3-e1724241594519.png"
+      }
+    ]
+  },
+  {
+    "kategori": "Samhälle & Mänskliga rättigheter",
+    "organisationer": [
+      {
+        "namn": "Civil Rights Defenders",
+        "url": "https://crd.org/sv/",
+        "beskrivning": "Skyddar mänskliga rättigheter och stärker människorättsförsvarare runt om i världen.",
+        "bild": "https://hsstiftelse.se/wp-content/uploads/2024/01/CRDlogo.jpeg"
+      },
+      {
+        "namn": "Convictus",
+        "url": "https://convictus.org/",
+        "beskrivning": "Ger stöd till människor i utsatthet, hemlöshet och beroendeproblematik.",
+        "bild": "https://convictus.org/_nuxt/img/506e5fa.png"
+      },
+      {
+        "namn": "Amnesty International",
+        "url": "https://www.amnesty.se/",
+        "beskrivning": "Global rörelse som arbetar för mänskliga rättigheter och mot orättvisor och förtryck.",
+        "bild": "https://www.amnesty.se/media/images/amnesty-candle-01.2e16d0ba.fill-1600x900.jpg"
+      },
+      {
+        "namn": "RFSU",
+        "url": "https://www.rfsu.se/",
+        "beskrivning": "Främjar sexuell och reproduktiv hälsa och rättigheter i Sverige och internationellt.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/RFSU-s_logga.png/640px-RFSU-s_logga.png"
+      },
+      {
+        "namn": "Kvinna till Kvinna",
+        "url": "https://kvinnatillkvinna.se/om-oss/",
+        "beskrivning": "Stödjer kvinnor i krigs- och konfliktområden samt arbetar för kvinnors rättigheter.",
+        "bild": "https://kvinnatillkvinna.se/wp-content/uploads/2024/02/KTK_Black_logo-1.png"
+      },
+      {
+        "namn": "Alla Kvinnors Hus",
+        "url": "https://allakvinnorshus.org/",
+        "beskrivning": "Erbjuder skydd och stöd till kvinnor och barn som utsatts för våld i nära relationer.",
+        "bild": "https://allakvinnorshus.org/wp-content/uploads/2023/05/AKHlogo_rod_72.png"
+      },
+      {
+        "namn": "Brottsofferjouren",
+        "url": "http://brottsofferjouren.se/",
+        "beskrivning": "Ger stöd till brottsoffer, vittnen och anhöriga.",
+        "bild": "https://www.brottsofferjouren.se/wp-content/uploads/2021/03/cropped-webbikon.png"
+      },
+      {
+        "namn": "RFSL",
+        "url": "https://www.rfsl.se/",
+        "beskrivning": "Arbetar för hbtqi-personers rättigheter och ett inkluderande samhälle.",
+        "bild": "https://www.rfsl.se/wp-content/uploads/2015/10/fb-share.png"
+      },
+      {
+        "namn": "Feministiskt initiativ",
+        "url": "https://feministisktinitiativ.se/",
+        "beskrivning": "Politiskt parti som kämpar för feminism, antirasism och mänskliga rättigheter.",
+        "bild": "https://feministisktinitiativ.se/wp-content/uploads/2022/05/logo-rosa-1.png"
+      },
+      {
+        "namn": "ForumCiv",
+        "url": "https://www.forumciv.org/",
+        "beskrivning": "Utvecklingsorganisation som arbetar för demokrati och mänskliga rättigheter globalt.",
+        "bild": "https://pbs.twimg.com/profile_images/1276041366640918528/I2R4pscQ_400x400.jpg"
+      },
+      {
+        "namn": "We Effect",
+        "url": "https://weeffect.se/",
+        "beskrivning": "Bekämpar fattigdom genom att stötta människors egen kraft, särskilt på landsbygden.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWs4F-dr-XzVoXwUQYeNXz9uO9fyBWMd1-uFE54HzKSHrfVHg7PUrUgElDaKf0SZF4zBk&usqp=CAU"
+      },
+      {
+        "namn": "Afrikagrupperna",
+        "url": "https://www.afrikagrupperna.se/",
+        "beskrivning": "Partnerorganisation till flera afrikanska rörelser som arbetar för rättvisa och jämställdhet.",
+        "bild": "https://www.insamlingskontroll.se/organizations/afrikagrupperna/"
+      },
+      {
+        "namn": "WaterAid",
+        "url": "https://www.wateraid.org/se",
+        "beskrivning": "Jobbar för att alla människor ska få tillgång till rent vatten, toaletter och hygien.",
+        "bild": "https://play-lh.googleusercontent.com/urOBhAnkjFO5eHo5at3y0fyn7FuHLCtLWmGOC-3woq3_lTQwz3kr33FE7vzSaoBkNg"
+      },
+      {
+        "namn": "Tostan",
+        "url": "https://tostan.org/",
+        "beskrivning": "Utbildningsorganisation som stärker samhällen i Västafrika att själva skapa förändring.",
+        "bild": "https://grillskastockholmsenegalresan.wordpress.com/wp-content/uploads/2015/04/tostan.jpg?w=2000&h=1500&crop=1"
+      }
+    ]
+  },
+  {
+    "kategori": "Djur & Naturvård",
+    "organisationer": [
+      {
+        "namn": "Hundstallet",
+        "url": "https://hundstallet.se/",
+        "beskrivning": "Tar hand om hemlösa hundar och arbetar för att ge dem nya trygga hem.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2023/04/hundstallet_sekundar_rgb.png"
+      },
+      {
+        "namn": "Djurens Rätt",
+        "url": "https://djurensratt.se/",
+        "beskrivning": "Sveriges största djurrätts- och djurskyddsorganisation som arbetar för djurens rättigheter.",
+        "bild": "https://shop.djurensratt.se/cdn/shop/files/RGB_turkos.png?v=1613760044"
+      },
+      {
+        "namn": "Birdlife Sverige",
+        "url": "https://birdlife.se/",
+        "beskrivning": "Skyddar vilda fåglar och deras livsmiljöer i Sverige.",
+        "bild": "https://dalafaglar.se/wp-content/uploads/sites/23/2018/07/cropped-birdlife_sverige_logotype.png"
+      },
+      {
+        "namn": "Djurskyddet Sverige",
+        "url": "https://www.djurskyddet.se/",
+        "beskrivning": "Riksorganisation som arbetar för att förbättra djurens livsvillkor.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQvIVL8wMcrPyRKGErQdiys5oT7ZiI0XfESA&s"
+      },
+      {
+        "namn": "World Animal Protection",
+        "url": "https://donera.worldanimalprotection.se/",
+        "beskrivning": "Internationell organisation som skyddar djur världen över från lidande.",
+        "bild": "https://via.tt.se/data/images/00710/1047b395-1fe5-4b65-8c2b-52e278c9ea41.png/social"
+      },
+      {
+        "namn": "Nordens Ark",
+        "url": "https://nordensark.se/",
+        "beskrivning": "Bevarar utrotningshotade djurarter och bedriver avels- och utbildningsarbete.",
+        "bild": "https://play-lh.googleusercontent.com/qHTKzQm7bcEzNYoYBdxukcNmHkJ6hOLd74pkTDrPPIBkbFlXVHRtMCSOIkUsTO_qbddn=w240-h480-rw"
+      }
+    ]
+  },
+  {
+    "kategori": "Katastrofhjälp & Humanitära insatser",
+    "organisationer": [
+      {
+        "namn": "Läkare Utan Gränser",
+        "url": "https://lakareutangranser.se/",
+        "beskrivning": "Ger medicinsk hjälp där behoven är som störst, oavsett land, religion eller politisk tillhörighet.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-oiicPvmz4ufhcHT_4P09hu_7Ckv544C0Q&s"
+      },
+      {
+        "namn": "Röda Korset",
+        "url": "https://www.rodakorset.se/",
+        "beskrivning": "Hjälper människor i kris, både i Sverige och internationellt.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_the_Red_Cross_cropped_as_a_square.png/250px-Flag_of_the_Red_Cross_cropped_as_a_square.png"
+      },
+      {
+        "namn": "UNICEF",
+        "url": "https://unicef.se/",
+        "beskrivning": "Arbetar för barns rättigheter i hela världen.",
+        "bild": "https://www.minv.sk/swift_data/source/images/unicef-logo.JPG"
+      },
+      {
+        "namn": "UNHCR",
+        "url": "https://www.sverigeforunhcr.se/",
+        "beskrivning": "FN:s flyktingorgan som skyddar människor på flykt.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyXcNBgUEPj-1It8Su_x6ER5t9-ziNVtSuA&s"
+      },
+      {
+        "namn": "Islamic Relief",
+        "url": "https://islamic-relief.se/",
+        "beskrivning": "Internationell hjälporganisation som arbetar med akuta kriser och långsiktig utveckling.",
+        "bild": "https://islamic-relief.se/wp-content/uploads/elementor/thumbs/nyheter_logga-pmqfm1vvci5nq6ptnt3ji243oueieuhbmluffsi5c8.jpg"
+      },
+      {
+        "namn": "Radiohjälpen",
+        "url": "https://www.radiohjalpen.se/",
+        "beskrivning": "Svensk insamlingsorganisation för humanitära insatser i Sverige och världen.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdpyD9Pb0wXoPMsWrswsrC9NgpbDV3E9V9Mg&s"
+      },
+      {
+        "namn": "Mercy Ships",
+        "url": "https://mercyships.se/",
+        "beskrivning": "Erbjuder kostnadsfri sjukvård med hjälp av sjukhusfartyg till utvecklingsländer.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/msi_rgb_master_blue_screen.png"
+      },
+      {
+        "namn": "Plan International",
+        "url": "https://plan.se/",
+        "beskrivning": "Arbetar för barns rättigheter och flickors lika villkor globalt.",
+        "bild": "https://1000logos.net/wp-content/uploads/2020/09/Plan-logo.jpg"
+      },
+      {
+        "namn": "NRC flyktinghjälpen",
+        "url": "https://www.nrc.no/språk/svenska/",
+        "beskrivning": "Ger skydd och hjälp till människor på flykt världen över.",
+        "bild": "https://www.nrc.se/shorthand/stories/tre-skal-till-att-din-gava-spelar-roll/assets/cjEziASrw0/nrc-flyktinghjalpen-logo-rgb-positive-aligned-left_shorthand-572x200-572x200.png"
+      },
+      {
+        "namn": "Human Rights Watch",
+        "url": "https://www.hrw.org/sv/categorys-us",
+        "beskrivning": "Internationell organisation som dokumenterar och rapporterar om mänskliga rättigheter.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hrw_logo.svg/800px-Hrw_logo.svg.png"
+      },
+      {
+        "namn": "Oxfam",
+        "url": "https://www.oxfam.org/sv",
+        "beskrivning": "Global hjälporganisation som bekämpar orättvisor och fattigdom.",
+        "bild": "https://oxfam.se/wp-content/uploads/2022/11/cropped-favicon.png"
+      },
+      {
+        "namn": "ActionAid",
+        "url": "https://www.actionaid.se/",
+        "beskrivning": "Internationell organisation som fokuserar på att bekämpa fattigdom och orättvisor.",
+        "bild": "https://weadapt.org/wp-content/uploads/2023/05/4f775f4323c0daa-logotype100-rgb_0.jpg"
+      },
+      {
+        "namn": "ADRA Sverige",
+        "url": "https://adra.se/",
+        "beskrivning": "Hjälper människor i nöd genom katastrofhjälp, utbildning och hälsa.",
+        "bild": "https://d1h79zlghft2zs.cloudfront.net/uploads/2019/07/160-768x790.png"
+      },
+      {
+        "namn": "Human Bridge",
+        "url": "https://humanbridge.se/",
+        "beskrivning": "Samlar in och skickar sjukvårdsutrustning och kläder till behövande länder.",
+        "bild": "https://www.humanbridge.se/wp-content/themes/HumanBridge/img/logo.jpg"
+      },
+      {
+        "namn": "SAM-hjälp",
+        "url": "https://www.samhjalp.se/",
+        "beskrivning": "Arbetar med att bistå behövande i Östeuropa med humanitär hjälp.",
+        "bild": "https://samhjalp.se/wp-content/uploads/2019/09/samhjalp_favicon.png"
+      },
+      {
+        "namn": "Operation Mercy",
+        "url": "https://operationmercy.se/",
+        "beskrivning": "Humanitär organisation som genomför långsiktig utveckling och nödhjälpsinsatser.",
+        "bild": "https://operationmercy.org/wp-content/uploads/2017/05/logofooter.svg"
+      },
+      {
+        "namn": "Hungerprojektet",
+        "url": "https://hungerprojektet.se/",
+        "beskrivning": "Arbetar för att avskaffa hunger och fattigdom genom att stärka kvinnor.",
+        "bild": "https://globalportalen.org/content/uploads/legacy/logos/thpse-primary-logo-rgb.png"
+      }
+    ]
+  },
+  {
+    "kategori": "Utbildning & Forskning",
+    "organisationer": [
+      {
+        "namn": "Right Livelihood Award",
+        "url": "https://rightlivelihood.org/",
+        "beskrivning": "Uppmärksammar och stödjer personer och organisationer som genomför banbrytande arbete för en bättre värld.",
+        "bild": "https://s36500.pcdn.co/wp-content/uploads/2011/12/RightLivelihood.jpg"
+      },
+      {
+        "namn": "Läxhjälpen",
+        "url": "https://laxhjalpen.se/",
+        "beskrivning": "Frivilligorganisation som erbjuder gratis läxhjälp till barn och unga i utsatta områden.",
+        "bild": "https://mb.cision.com/Public/7075/0/beddcaf2795ae546_org.png"
+      },
+      {
+        "namn": "Artikel 2",
+        "url": "https://artikel2.se/",
+        "beskrivning": "Stödjer unga människor att förstå sina rättigheter och utvecklas genom utbildning.",
+        "bild": "https://artikel2.se/wp-content/uploads/2023/09/Logotyp_EmmausStockholm_Artikel2_Svart.png"
+      },
+      {
+        "namn": "Hand in Hand",
+        "url": "https://www.handinhandsweden.se/",
+        "beskrivning": "Arbetar för att förbättra kvinnors och barns liv genom utbildning och entreprenörskap.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aFbUGtkrRJ-4rRaOcFkxPgVF-ynuYnkmSw&s"
+      },
+      {
+        "namn": "Teach for Sweden",
+        "url": "https://teachforsweden.org/",
+        "beskrivning": "En rörelse som rekryterar och utbildar ledare som vill bidra till att minska utbildningsklyftor i Sverige.",
+        "bild": "https://pbs.twimg.com/profile_images/3429546474/e057671d53158a0f69bf04dd33c8c3b7_400x400.png"
+      }
+    ]
+  },
+  {
+    "kategori": "Kultur & Idrott",
+    "organisationer": [
+      {
+        "namn": "Scouterna",
+        "url": "https://www.scouterna.se/",
+        "beskrivning": "En organisation för ungdomar som genom aktiviteter inom friluftsliv och ledarskap utvecklas som individer och samhällsmedborgare.",
+        "bild": "https://web.cdn.scouterna.net/uploads/sites/130/2018/12/scoutsymbolen_rgb.png"
+      },
+      {
+        "namn": "Friluftsfrämjandet",
+        "url": "https://www.friluftsframjandet.se/",
+        "beskrivning": "Arbetar för att fler ska få uppleva och njuta av friluftsliv och natur genom aktiviteter och utbildning.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LQ36Jzq8lDa4Meg_TLwNmchB-4TINbJFL0XsQo27kcantpqzyKs54fYfmA5HBegv9Eo&usqp=CAU"
+      },
+      {
+        "namn": "Sportfiskarna",
+        "url": "https://www.sportfiskarna.se/",
+        "beskrivning": "En ideell förening som arbetar för att bevara svenska fiskevattens biologiska mångfald och för en hållbar sportfiskeutövning.",
+        "bild": "https://webbshop.sportfiskarna.se/cdn/shop/products/0000341_dekal-sportfiskarna.png?v=1651153023"
+      },
+      {
+        "namn": "Korpen",
+        "url": "https://www.korpen.se/",
+        "beskrivning": "Erbjuder aktiviteter och idrott för alla, med fokus på gemenskap och glädje.",
+        "bild": "https://www.korpen.se/media/qpefoa4d/korpenlogo.jpg?mode=pad&quality=90&width=1200&height=630&bgcolor=white&rnd=133137150897430000"
+      },
+      {
+        "namn": "Sverok",
+        "url": "https://sverok.se/",
+        "beskrivning": "En ungdomsorganisation som erbjuder aktiviteter och nätverk för de som är intresserade av olika kulturyttringar och aktiviteter.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2023/05/bla-logotyp-sverok--spelhobbyforbundet-e1685361598402-400x520.png"
+      },
+      {
+        "namn": "Riksidrottsförbundet",
+        "url": "https://www.rf.se/",
+        "beskrivning": "Sveriges största samlande kraft för idrottsrörelsen, ansvarig för utvecklingen av svensk idrott.",
+        "bild": "https://my.ai.se/media/9341?conversion=full"
+      }
+    ]
+  },
+  {
+    "kategori": "Religionsbaserat",
+    "organisationer": [
+      {
+        "namn": "ACT Svenska kyrkan",
+        "url": "https://www.act.svenskakyrkan.se/",
+        "beskrivning": "Arbetar för en rättvis och hållbar värld genom humanitärt bistånd och utvecklingssamarbete.",
+        "bild": "https://www.svenskakyrkan.se/bilder/Swe_Act_logo_RGB_transp(1).png?doprocessing=1&w=800"
+      },
+      {
+        "namn": "Diakonia",
+        "url": "https://www.diakonia.se/",
+        "beskrivning": "En biståndsorganisation som arbetar för att bekämpa fattigdom och orättvisor.",
+        "bild": "https://lyckebokyrkan.se/wp-content/uploads/sites/133/2022/04/diakonia-logo-400x400-1.png"
+      },
+      {
+        "namn": "Pingst (PMU)",
+        "url": "https://pmu.se/",
+        "beskrivning": "Pingst Mission Utland är en del av Pingströrelsen och arbetar med internationellt bistånd.",
+        "bild": "https://www.insamlingskontroll.se/wp-content/uploads/2021/06/Pingst.png"
+      },
+      {
+        "namn": "Equmeniakyrkan",
+        "url": "https://equmeniakyrkan.se/",
+        "beskrivning": "En kyrka som engagerar sig i både samhällsfrågor och internationella insatser.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrvwRgQJkkhWBVeGFZskzdNahUbfaK4czXubacVga1HcQPFc1hHu4VGILXQSPS_aARfE&usqp=CAU"
+      },
+      {
+        "namn": "Evangeliska Frikyrkan",
+        "url": "https://www.efk.se/",
+        "beskrivning": "En fri kyrka som arbetar för att sprida kristen tro och bidra till socialt ansvar.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/1/16/EFK_logga.jpg"
+      },
+      {
+        "namn": "Evangeliska Fosterlands-stiftelsen",
+        "url": "https://www.efssm.se/",
+        "beskrivning": "En kristen organisation som arbetar med både hjälpinsatser och diakoni.",
+        "bild": "https://www.insamlingskontroll.se/wp-content/uploads/2021/06/EFS.png"
+      },
+      {
+        "namn": "Romersk-Katolska kyrkan",
+        "url": "https://www.katolska.se/",
+        "beskrivning": "Den katolska kyrkan är engagerad i olika sociala frågor och humanitära insatser.",
+        "bild": "https://www.insamlingskontroll.se/wp-content/uploads/2021/06/Romersk-Katolska-Kyrkan.png"
+      },
+      {
+        "namn": "Kristna Fredsrörelsen",
+        "url": "https://kristnafreds.se/",
+        "beskrivning": "Arbetar för att förebygga våld och bidra till fredliga lösningar på konflikter.",
+        "bild": "https://www.insamlingskontroll.se/wp-content/uploads/2021/06/Kristna-Fredsrorelsen.jpg"
+      },
+      {
+        "namn": "Livets Ord",
+        "url": "https://www.livetssyfte.se/",
+        "beskrivning": "En kyrka och rörelse som sprider budskapet om hopp och försoning.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxwEjd1YNNaoZye_j6ZSPLWbsUQvhwnHiWAjusVxqTmKSnaNez3_KQHxolujEikmoBYqI&usqp=CAU"
+      },
+      {
+        "namn": "Trosgnistan",
+        "url": "https://trosgnistan.se/",
+        "beskrivning": "En kristen rörelse som engagerar sig i evangelisation och hjälpinsatser.",
+        "bild": "https://static.wixstatic.com/media/a79cb1_4804f60789484fc39e6dc96694fa036b~mv2.png/v1/fill/w_302,h_134,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TG%20-%20logo.png"
+      },
+      {
+        "namn": "Svenska Alliansmissionen",
+        "url": "https://www.alliansmissionen.se/",
+        "beskrivning": "En kyrka som arbetar för att sprida kristen tro och engagera sig i hjälpverksamhet.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjLEM5xQzppz6OB4_waGWPRzB8lHXfxNRPeA&s"
+      },
+      {
+        "namn": "Bibelsällskapet",
+        "url": "https://www.bibelsallskapet.se/",
+        "beskrivning": "Arbetar för att sprida bibeln och kristen litteratur i Sverige och internationellt.",
+        "bild": "https://www.bibelsällskapet.se/wp-content/uploads/2021/07/bibelsallskapet_site-logo.png"
+      },
+      {
+        "namn": "Ibra Radio",
+        "url": "https://www.ibra.se/",
+        "beskrivning": "En medieorganisation som sprider kristen tro och samhällsengagemang genom radio och andra plattformar.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7zmhQrTmkoEEYQY3UDX8_pdbS_klKepyaAzkrGpWVq5ZGU2usFS5d7Y9alk1AhpCH6o8&usqp=CAU"
+      },
+      {
+        "namn": "Ersta Diakonsällskap",
+        "url": "https://www.erstadiakoni.se/",
+        "beskrivning": "En diakoniorganisation som arbetar för att hjälpa utsatta människor i samhället.",
+        "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCIJSF3bzg5_Z88NN9fTenzof5LYIOQSDTA&s"
+      }
+    ]
+  },
+  {
+    "kategori": "Svenska Stadsmissioner",
+    "organisationer": [
+      {
+        "namn": "Stockholms Stadsmission",
+        "url": "https://stadsmissionen.se/",
+        "beskrivning": "En organisation som arbetar för att ge stöd och hjälp till människor i utsatta livssituationer i Stockholm.",
+        "bild": "https://www.insamlingskontroll.se/organizations/stockholms-stadsmission/"
+      },
+      {
+        "namn": "Göteborgs Stadsmission",
+        "url": "https://www.gbgstadsmission.se/",
+        "beskrivning": "Arbetar för att hjälpa människor i utsatthet i Göteborg genom stöd, hjälp och aktiviteter.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/goteborgsstadsmission_logo_black_rgb.png"
+      },
+      {
+        "namn": "Göteborgs Räddningsmission",
+        "url": "https://raddningsmissionen.se/",
+        "beskrivning": "En hjälporganisation som erbjuder stöd till hemlösa och andra utsatta i Göteborg.",
+        "bild": "https://www.raddningsmissionen.se/themes/theme/grm-logo.png"
+      },
+      {
+        "namn": "Skåne Stadsmission",
+        "url": "https://skanemission.se/",
+        "beskrivning": "En organisation som arbetar för att hjälpa människor som lever i utsatthet i Skåne.",
+        "bild": "https://www.skanestadsmission.se/wp-content/uploads/2018/02/frilagd.png"
+      },
+      {
+        "namn": "Östergötlands Stadsmission",
+        "url": "https://ostergotland.stadsmissionen.se/",
+        "beskrivning": "En stadsmission som erbjuder stöd till människor i nöd i Östergötland.",
+        "bild": "https://www.insamlingskontroll.se/wp-content/uploads/2021/06/OstergotlandsStadsmission_logo_black_RGB.png"
+      },
+      {
+        "namn": "Uppsala Stadsmission",
+        "url": "https://uppsala.stadsmissionen.se/",
+        "beskrivning": "Ger stöd till människor som lever i utsatthet i Uppsala genom olika insatser.",
+        "bild": "https://uppsalastadsmission.se/wp-content/uploads/2023/04/UppsalaStadsmission_logo_black_RGB-1-768x422.png"
+      },
+      {
+        "namn": "Sörmlands Stadsmission",
+        "url": "https://sodermanland.stadsmissionen.se/",
+        "beskrivning": "Arbetar för att stötta människor i behov i Södermanlands län.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/sormlandsstadsmission_logo_black_rgb.png"
+      },
+      {
+        "namn": "Kalmar Stadsmission",
+        "url": "https://kalmar.stadsmissionen.se/",
+        "beskrivning": "En organisation som erbjuder hjälp och stöd för människor i utsatthet i Kalmar.",
+        "bild": "https://kalmarstadsmission.se/app/themes/stadsmissionen/dist/img/logo.png"
+      },
+      {
+        "namn": "Örebro Stadsmission",
+        "url": "https://orebro.stadsmissionen.se/",
+        "beskrivning": "Erbjuder stöd och hjälp till människor i utsatthet i Örebro.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/orebrostadsmission_logo_black_rgb-1.png"
+      }, 
+      {
+        "namn": "Sveriges Stadsmissioner",
+        "url": "https://stadsmissionerna.se/",
+        "beskrivning": "En samlande organisation för alla stadsmissioner i Sverige, som arbetar med socialt arbete.",
+        "bild": "https://www.givasverige.se/wp-content/uploads/2018/02/sveriges-stadsmissioner-e1724166119105.png"
+      },
+      {
+        "namn": "Reningsborg",
+        "url": "https://reningsborg.se/",
+        "beskrivning": "Arbetar för att hjälpa människor i social utsatthet, framför allt i Göteborgsregionen.",
+        "bild": "https://www.insamlingskontroll.se/organizations/reningsborg/"
+      }
+    ]
+  },
+  {
+    "kategori": "Övrigt",
+    "organisationer": [
+      {
+        "namn": "Svenska Freds",
+        "url": "https://www.svenskafreds.se/om-oss/",
+        "beskrivning": "Svenska Freds arbetar för fred, säkerhet och mänskliga rättigheter i världen.",
+        "bild": "https://fn.se/wp-content/uploads/2024/02/svenskafreds.jpg"
+      }
+    ]
+  }
+
+]
+  

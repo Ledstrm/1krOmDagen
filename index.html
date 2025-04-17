@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 kr om dagen, Hem </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo" accesskey="h">
+            <img src="1kr-top-bar-logo.png" alt="1 krona om dagen #365dagar">
+            <span>1 krona om dagen #365dagar</span>
+        </a>
+        
+        <div class="search-container">
+            <button class="search-button">🔍 Sök</button>
+            <div class="search-dropdown">
+                <input class="search-field" type="text" placeholder="Skriv din sökning...">
+                <button class="search-submit">Sök</button>
+            </div>
+        </div>
+
+       
+
+        <button class="menu-button" id="open-menu">☰ Meny</button>
+    </nav>
+
+        <!-- Sidomenyn -->
+        <div class="side-menu" id="side-menu">
+            <button class="close-menu" id="close-menu">✖</button>
+            <ul>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="all150.html">Betrodda organisationer</a></li>
+                <li><a href="charityStats.html">Statistik</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    
+        <!---div för at Ge mörkare bakgrund när man klickar på sidimenyn-->
+        <div class="overlay" id="overlay"></div>
+
+        <!--Div för innehåll i "kort"-form-->
+        <section class="cards-section">
+            <div class="card">
+                <h3 class="card-title">Målet med 1 krona om dagen</h3>
+                <p class="card-description">
+                  Att skapa en plats där du i lugn och ro kan välja en hjälporganisation som passar det du brinner för.
+                </p>
+                <div class="card-extra">
+                  <p>
+                    "Om många ger lite, så blir det mycket."<br/>
+                    Målet är att du ska kunna välja ett ändamål från en lista med tydlig statistik, utan att känna att det är något jobbigt.<br/><br/>
+                    Här handlar det om att göra ett <b>val som känns bra för dig</b>, inte för att du måste, utan <b>för att du vill</b>.<br/>
+                    Och när du hjälper till, så är det något fint – och du förtjänar att må bra för det!<br/><br/>
+                    <i>Vi vill att fler ska känna sig okej med att ge så lite som en krona om dagen, för det är alltid mer än ingenting</i>
+                  </p>
+                </div>
+                <button class="card-link">Läs mer</button>
+              </div>
+
+<!-- Modal för Rubrik 2 -->
+<div id="modal-2" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal-2">&times;</span>
+        <h2>Svensk insamlingskontroll</h2>
+        <p>När Svensk insamlingkontroll har godkänt att en organisation får ha ett 90-konto, så är det den bästa
+            garantin vi har i Sverige, på att deras insamlingar håller sig inom vissa regler.<br/>
+           -Max 25% av den totalt insamlade summan får gå till organisationens administration.<br/>
+           -Minst 75% av den totalt insamlade summan skall gå till ändamålet.
+    </div>
+</div>
+
+<!-- Modal för Rubrik 3 -->
+<div id="modal-3" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal-3">&times;</span>
+        <h2>Detaljer för Rubrik 3</h2>
+        <p>Här är mer information om Rubrik 3.</p>
+    </div>
+</div>
+    
+        <script src="main.js"></script>
+</body>
+</html>
