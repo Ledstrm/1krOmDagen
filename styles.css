@@ -190,22 +190,25 @@ section {
 }
 
 /* Extra innehåll i kort som kan döljas */
-.card-extra{
+.card-extra {
+    max-height: 0;
+    overflow: hidden;
     background-color: #f0f0f0;
     border-radius: 8px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0 10px; /* Behåll horisontell padding för snygg animation */
+    margin-top: 0;
     font-size: 0.9rem;
     color: #555;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
- .card-extra.expanded {
-    max-height: 0;
     opacity: 0;
-    padding: 0;
-    margin: 0;
-}
+    transition: all 0.4s ease;
+  }
+  
+  .card-extra.expanded {
+    max-height: 1000px;
+    margin-top: 10px;
+    padding: 10px;
+    opacity: 1;
+  }
 
 /* Rubriker */
 .card-title {
@@ -258,39 +261,6 @@ section {
     height: 100%;
     overflow: auto; /* Gör så att man kan scrolla om modalens innehåll är för stort */
     background-color: rgba(0, 0, 0, 0.4); /* Mörk bakgrund för att skapa en dimma */
-}
-
-/* Modalens innehåll */
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Stäng-knappen */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Responsiv modal */
-@media screen and (max-width: 768px) {
-    .modal-content {
-        width: 90%;
-    }
 }
 
 .contact-form-section {
