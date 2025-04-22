@@ -38,9 +38,15 @@ function performSearch() {
   if (query === "") {
     displayOrganizations(jsonData); // visa allt igen om inget sökord
     return;
+  }const filtered = [];
+
+  if (filtered.length === 0) {
+    const container = document.getElementById('org-container');
+    container.innerHTML = `<p style="color:red; font-weight:bold;">Inga organisationer matchade din sökning.</p>`;
+    return;
   }
 
-  const filtered = [];
+  
 
   jsonData.forEach(group => {
     const matchingOrgs = group.organisationer.filter(org => {
