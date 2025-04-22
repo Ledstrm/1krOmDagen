@@ -22,50 +22,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // === Sökmöjlighet ===
   const searchInput = document.querySelector('.search-input');
-const searchButton = document.querySelector('.search-button');
+  const searchButton = document.querySelector('.search-button');
+  let currentQuery = "";
 
-searchButton.addEventListener('click', performSearch);
-searchInput.addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-    performSearch();
-  }
-});
-
-// Funktion för att utföra sökningen
-function performSearch() {
-  const query = searchInput.value.toLowerCase().trim();
-  if (query === "") {
-    displayOrganizations(jsonData); // visa allt igen om inget sökord
-    return;
-  }const filtered = [];
-
-  if (filtered.length === 0) {
-    const container = document.getElementById('org-container');
-    container.innerHTML = `<p style="color:red; font-weight:bold;">Inga organisationer matchade din sökning.</p>`;
-    return;
-  }
-
-  
-
-  jsonData.forEach(group => {
-    const matchingOrgs = group.organisationer.filter(org => {
-      return (
-        org.namn.toLowerCase().includes(query) ||
-        org.beskrivning.toLowerCase().includes(query) ||
-        group.kategori.toLowerCase().includes(query)
-      );
-    });
-
-    if (matchingOrgs.length > 0) {
-      filtered.push({
-        kategori: group.kategori,
-        organisationer: matchingOrgs
-      });
+  searchButton.addEventListener('click', performSearch);
+  searchInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      performSearch();
     }
   });
 
-    displayOrganizations(filtered);
+  function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    
+    // Spara sökfrågan för highlightText-funktionen
+    currentQuery = query;
+    
+    if (query === "") {
+      displayOrganizations(jsonData); // visa allt igen om inget sökord
+      return;
+    }
+    
+    const filtered = [];
+    
+    jsonData.forEach(group => {
+      const matchingOrgs = group.organisationer.filter(org => {
+        return (
+          org.namn.toLowerCase().includes(query) ||
+          org.beskrivning.toLowerCase().includes(query) ||
+          group.kategori.toLowerCase().includes(query)
+        );
+      });
+
+      if (matchingOrgs.length > 0) {
+        filtered.push({
+          kategori: group.kategori,
+          organisationer: matchingOrgs
+        });
+      }
+    });
+
+    if (filtered.length === 0) {
+      const container = document.getElementById('org-container');
+      container.innerHTML = `<p style="color:red; font-weight:bold;">Inga organisationer matchade din sökning.</p>`;
+    } else {
+      displayOrganizations(filtered);
+    }
+    
+    // Rensa sökfältet efter sökning
+    searchInput.value = '';
+  }
+
+  function highlightText(text, query) {
+    if (!query || query === "") return text;
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<mark>$1</mark>');
   }
 
   // === SPA-visning ===
@@ -78,8 +90,13 @@ function performSearch() {
     const target = document.querySelector(id);
     if (target) {
       target.style.display = "block";
+      
+      // Om man navigerar till favoritsidan, uppdatera den
+      if (id === "#favorites") {
+        displayFavorites();
+      }
     }
-  }
+  } 
 
   window.addEventListener("hashchange", () => {
     showPage(window.location.hash);
@@ -109,6 +126,84 @@ function performSearch() {
     });
   });
 
+  // === Favoritfunktioner ===
+  // Hämta sparade favoriter från localStorage
+  function getFavorites() {
+    const favoritesString = localStorage.getItem('favorites');
+    return favoritesString ? JSON.parse(favoritesString) : [];
+  }
+
+  // Spara favoriter till localStorage
+  function saveFavorites(favorites) {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }
+
+  // Lägg till eller ta bort favorit
+  function toggleFavorite(orgId, orgName) {
+    const favorites = getFavorites();
+    const existingIndex = favorites.findIndex(fav => fav.id === orgId);
+    
+    if (existingIndex !== -1) {
+      // Ta bort från favoriter
+      favorites.splice(existingIndex, 1);
+      saveFavorites(favorites);
+      return false; // Inte favorit längre
+    } else {
+      // Lägg till som favorit
+      favorites.push({ id: orgId, name: orgName });
+      saveFavorites(favorites);
+      return true; // Nu favorit
+    }
+  }
+
+  // Kontrollera om en org är favorit
+  function isFavorite(orgId) {
+    const favorites = getFavorites();
+    return favorites.some(fav => fav.id === orgId);
+  }
+
+  // Visa favoriter på favoritssidan
+  function displayFavorites() {
+    const favorites = getFavorites();
+    const container = document.getElementById('favorite-container');
+    
+    if (!container) return;
+    
+    if (favorites.length === 0) {
+      container.innerHTML = '<p>Du har inga favoritorganisationer ännu.</p>';
+      return;
+    }
+    
+    container.innerHTML = '';
+    
+    // Skapa en grid för favoriter
+    const grid = document.createElement('div');
+    grid.classList.add('grid-container');
+    
+    // Hitta och visa alla favoritorgs
+    favorites.forEach(favorite => {
+      // Sök genom jsonData för att hitta organisationen
+      let foundOrg = null;
+      let orgCategory = "";
+      
+      jsonData.forEach(group => {
+        group.organisationer.forEach(org => {
+          if (org.id === favorite.id) {
+            foundOrg = org;
+            orgCategory = group.kategori;
+          }
+        });
+      });
+      
+      if (foundOrg) {
+        const card = createOrgCard(foundOrg, orgCategory);
+        grid.appendChild(card);
+      }
+    });
+    
+    container.appendChild(grid);
+  }
+
   // === Organisationer från JSON ===
   const container = document.getElementById('org-container');
   let jsonData = [];
@@ -119,6 +214,15 @@ function performSearch() {
       return response.json();
     })
     .then(data => {
+      // Se till att varje organisation har ett unikt ID
+      data.forEach((group, groupIndex) => {
+        group.organisationer.forEach((org, orgIndex) => {
+          if (!org.id) {
+            org.id = `org-${groupIndex}-${orgIndex}`;
+          }
+        });
+      });
+      
       jsonData = data;
       displayOrganizations(jsonData);
     })
@@ -134,6 +238,53 @@ function performSearch() {
     filter.addEventListener('change', filterOrganizations);
   }
 
+  // Skapa organisationskort med favorit-funktion
+  function createOrgCard(org, category) {
+    const card = document.createElement('div');
+    card.classList.add('org-card');
+    card.dataset.category = category;
+    
+    // Stjärn-ikon (använder unicode-stjärna)
+    const isFav = isFavorite(org.id);
+    const starClass = isFav ? 'favorite active' : 'favorite';
+    
+    card.innerHTML = `
+    <img src="${org.bild}" alt="${org.namn}" />
+    <h3>${highlightText(org.namn, currentQuery)}</h3>
+    <p>${highlightText(org.beskrivning, currentQuery)}</p>
+    <div class="org-card-footer">
+      <a href="${org.url}" target="_blank" class="extern-lank">Läs mer</a>
+      <span class="${isFavorite(org.id) ? 'favorite active' : 'favorite'}" data-id="${org.id}" data-name="${org.namn}">★</span>
+    </div>
+  `;
+    
+    // Lägg till klick-event för stjärnor
+    const star = card.querySelector('.favorite');
+    star.addEventListener('click', function() {
+      const orgId = this.dataset.id;
+      const orgName = this.dataset.name;
+      const isNowFavorite = toggleFavorite(orgId, orgName);
+      
+      if (isNowFavorite) {
+        this.classList.add('active');
+      } else {
+        this.classList.remove('active');
+      }
+    });
+    
+    // Lägg till klick-event för länken
+    const link = card.querySelector('.extern-lank');
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const confirmRedirect = confirm("Du är på väg att lämna sidan. Vill du fortsätta till en extern sida?");
+      if (confirmRedirect) {
+        window.open(this.href, '_blank');
+      }
+    });
+    
+    return card;
+  }
+
   function displayOrganizations(organizations) {
     if (!container) return;
 
@@ -147,26 +298,7 @@ function performSearch() {
       grid.classList.add('grid-container');
 
       grupp.organisationer.forEach(org => {
-        const card = document.createElement('div');
-        card.classList.add('org-card');
-        card.dataset.category = org.kategori;
-
-        card.innerHTML = `
-          <img src="${org.bild}" alt="${org.namn}" />
-          <h3>${org.namn}</h3>
-          <p>${org.beskrivning}</p>
-          <a href="${org.url}" target="_blank" class="extern-lank">Läs mer</a>
-        `;
-
-        const link = card.querySelector('.extern-lank');
-        link.addEventListener('click', function (event) {
-          event.preventDefault();
-          const confirmRedirect = confirm("Du är på väg att lämna sidan. Vill du fortsätta till en extern sida?");
-          if (confirmRedirect) {
-            window.open(this.href, '_blank');
-          }
-        });
-
+        const card = createOrgCard(org, grupp.kategori);
         grid.appendChild(card);
       });
 
@@ -177,6 +309,13 @@ function performSearch() {
 
   function filterOrganizations() {
     const category = filter.value;
+    
+    // Om användaren väljer "se alla" eller byter kategori, återställ sökningen
+    if (currentQuery) {
+      currentQuery = "";
+      displayOrganizations(jsonData); // Visa alla organisationer igen
+    }
+    
     const sections = document.querySelectorAll('.category-section');
 
     sections.forEach(section => {

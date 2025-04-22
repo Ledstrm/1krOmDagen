@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1 kr om dagen, Hem </title>
+    <title>1 kr om dagen </title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,6 +29,7 @@
             <ul>
                 <li><a href="#about">Om oss</a></li>
                 <li><a href="#all150">Betrodda organisationer</a></li>
+                <li><a href="#favorites">Mina Favoriter</a></li>
                 <li><a href="#charityStats">Statistik</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
@@ -38,7 +39,7 @@
         <div class="overlay" id="overlay"></div>
 
 
-     <div id="home" class="page"> <!--Div för innehåll i "kort"-form-->
+     <div id="home" class="page" data-title="Hem"> <!--Div för innehåll i "kort"-form-->
        
         <section class="cards-section">
             <div class="card">
@@ -90,8 +91,12 @@
             </section>
             </div>
 
+    <div id="favorites" class="page" style="display:none;" data-title="Mina favoriter">
+        <h1>Mina favoritorganisationer</h1>
+        <div id="favorite-container"></div>
+    </div>
 
-<div id="about" class="page" style="display: none;">
+<div id="about" class="page" style="display: none;" data-title="Om oss">
 
     <h1>Om oss</h1>
     <p>Jag är en liten systemutvecklarstudent med stora drömmar.<br/>
@@ -118,7 +123,7 @@
     Och det vill jag att du ska få känna med.
 </p></div>
 
-<div id="all150" class="page" style="display:none;">
+<div id="all150" class="page" style="display:none;" data-title="Betrodda organisationer">
 
     <h1>Lista över De 150 största Hjälporganisationerna i Sverige</h1>
 
@@ -147,7 +152,7 @@
     <!-- Container för organisationer -->
     <div id="org-container"></div>
 
-<div id="contact" class="page" style="display:none;">
+<div id="contact" class="page" style="display:none;" data-title="Kontakt">
 
         <section class="contact-form-section">
 
