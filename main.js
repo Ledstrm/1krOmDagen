@@ -65,8 +65,8 @@ function performSearch() {
     }
   });
 
-  displayOrganizations(filtered);
-}
+    displayOrganizations(filtered);
+  }
 
   // === SPA-visning ===
   function showPage(id) {
