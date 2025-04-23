@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log("Kontaktsida finns:", document.querySelector("#contact") !== null);
+  console.log("Kontaktformulär finns:", document.querySelector("#contactForm") !== null);
+  
   // === Menyfunktion ===
   const menuButton = document.getElementById("open-menu");
   const closeButton = document.getElementById("close-menu");
@@ -19,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     sideMenu.classList.remove("active");
     overlay.classList.remove("active");
   });
+
+  const testButton = document.getElementById("test-button");
+  if (testButton) {
+    testButton.addEventListener("click", () => {
+      
+    });
+  } else {
+    console.error("Testknappen hittades inte i DOM");
+  }
 
   // === Sökmöjlighet ===
   const searchInput = document.querySelector('.search-input');
@@ -80,8 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
     return text.replace(regex, '<mark>$1</mark>');
   }
 
+  
+
   // === SPA-visning ===
   function showPage(id) {
+    console.log("Visar sida:", id);
     const pages = document.querySelectorAll(".page");
     pages.forEach(page => {
       page.style.display = "none";
@@ -95,6 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (id === "#favorites") {
         displayFavorites();
       }
+      if (id === "#contact") {
+        resetContactForm();
+      }
+    }else{
+      console.error("Sidan hittades inte:", id);
     }
   } 
 
@@ -103,6 +123,77 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   showPage(window.location.hash || "#home"); // Kör vid start
+  // För felsökning av SPA-navigationen
+document.querySelectorAll('.side-menu a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    console.log("Klickad länk:", this.getAttribute('href'));
+    // Stäng menyn när en länk klickas
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
+ // === Kontaktformulär === 
+ function resetContactForm() {
+  const form = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  
+  if (form) {
+    form.reset();
+    if (formStatus) {
+      formStatus.className = 'form-status';
+      formStatus.textContent = '';
+    }
+  }
+}
+
+// Hantera formulärinlämning
+function handleFormSubmit(event) {
+  event.preventDefault();
+  
+  const form = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const submitButton = document.getElementById('submitButton');
+  
+  // Förhindra flera klick
+  submitButton.disabled = true;
+  submitButton.textContent = 'Skickar...';
+  
+  // Samla formulärdata
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    subject: form.subject.value,
+    message: form.message.value
+  };
+  
+  // Simulera AJAX-anrop (ersätt med din faktiska server-URL)
+  setTimeout(() => {
+    // Simulera en lyckad serverrespons
+    const success = true; // Ändra till false för att testa felmeddelanden
+    
+    if (success) {
+      formStatus.textContent = 'Tack för ditt meddelande! Vi återkommer så snart som möjligt.';
+      formStatus.className = 'form-status success';
+      form.reset();
+    } else {
+      formStatus.textContent = 'Ett fel uppstod. Försök igen senare eller kontakta oss via e-post.';
+      formStatus.className = 'form-status error';
+    }
+    
+    submitButton.disabled = false;
+    submitButton.textContent = 'Skicka';
+  }, 1500);
+  
+  return false;
+}
+
+// Koppla formuläret till handleFormSubmit-funktionen
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', handleFormSubmit);
+} else {
+  console.error("Kontaktformuläret hittades inte i DOM");
+}
 
   // === Kortfunktioner ===
   document.querySelectorAll('.card-link').forEach(button => {
@@ -203,8 +294,57 @@ document.addEventListener('DOMContentLoaded', () => {
     
     container.appendChild(grid);
   }
+// === Matchningstest ===
+  const testForm = document.getElementById('match-test');
+  const resultContainer = document.getElementById('test-result');
 
-  // === Organisationer från JSON ===
+  testForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const formData = new FormData(testForm);
+    const values = [];
+    formData.forEach(value => values.push(value));
+
+    const matchScores = {};
+    values.forEach(cat => {
+      matchScores[cat] = (matchScores[cat] || 0) + 1;
+    });
+
+    // Hitta toppkategorier (sorterat efter poäng)
+    const sortedCategories = Object.entries(matchScores)
+      .sort((a, b) => b[1] - a[1])
+      .map(entry => entry[0]);
+
+    const topCategory = sortedCategories[0];
+    if (!topCategory) {
+      resultContainer.innerHTML = '<p>Välj minst ett alternativ för att få matchningar.</p>';
+      return;
+    }
+
+    // Visa matchande organisationer från jsonData
+    const matches = [];
+    jsonData.forEach(group => {
+      if (group.kategori === topCategory) {
+        matches.push(...group.organisationer);
+      }
+    });
+
+    resultContainer.innerHTML = `
+      <h3>Du matchar med kategorin: ${topCategory}</h3>
+      <div class="grid-container">
+        ${matches.slice(0, 5).map(org => `
+          <div class="org-card">
+            <img src="${org.bild}" alt="${org.namn}" />
+            <h4>${org.namn}</h4>
+            <p>${org.beskrivning}</p>
+            <a href="${org.url}" target="_blank">Läs mer</a>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  });
+
+  // === Organisationer från JSON === (Ställer till problem? prova ändra till document.queryselector("main").innerHTML = generateHTML;
+  //  eller doument.body.innerHTML = generateHTML;) 
   const container = document.getElementById('org-container');
   let jsonData = [];
 

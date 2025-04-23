@@ -6,22 +6,21 @@
     <title>1 kr om dagen </title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="page-container">
     <nav class="navbar">
         <a href="/" class="logo" accesskey="h">
             <img src="1kr-top-bar-logo.png" alt="1 krona om dagen #365dagar">
             <span>1 krona om dagen #365dagar</span>
         </a>
         
-        <div class="search-container">
-            
-            <input type="text" class="search-input" placeholder="Skriv här...">
-            <button class="search-button">Sök</button>
-        </div>
+        <button onclick="window.location.hash = '#test'" class="nav-button">🎯 Testa dig!</button>
 
 
         <button class="menu-button" id="open-menu">☰ Meny</button>
     </nav>
+
 
         <!-- Sidomenyn -->
         <div class="side-menu" id="side-menu">
@@ -30,7 +29,6 @@
                 <li><a href="#about">Om oss</a></li>
                 <li><a href="#all150">Betrodda organisationer</a></li>
                 <li><a href="#favorites">Mina Favoriter</a></li>
-                <li><a href="#charityStats">Statistik</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
@@ -38,7 +36,7 @@
         <!---div för at Ge mörkare bakgrund när man klickar på sidimenyn-->
         <div class="overlay" id="overlay"></div>
 
-
+<main class="main-content">
      <div id="home" class="page" data-title="Hem"> <!--Div för innehåll i "kort"-form-->
        
         <section class="cards-section">
@@ -96,11 +94,43 @@
         <div id="favorite-container"></div>
     </div>
 
+    <div id="contact" class="page">
+        <div class="contact-form-container">
+          <h2>Kontakta oss</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Namn:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-post:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Ämne:</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Meddelande:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" id="submitButton">Skicka</button>
+            </div>
+            
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+
 <div id="about" class="page" style="display: none;" data-title="Om oss">
 
-    <h1>Om oss</h1>
-    <p>Jag är en liten systemutvecklarstudent med stora drömmar.<br/>
-    Ibland lite för stora drömmar.
+    <h1>Om webbsidan</h1>
+    <p>Jag är en systemutvecklarstudent...<br/></br/>
 
     Som många andra säkert gör, så brukar jag ligga och fundera när jag släckt lampan och borde sova.<br/>
     En kväll frågade jag mig själv: <br/>
@@ -123,9 +153,46 @@
     Och det vill jag att du ska få känna med.
 </p></div>
 
-<div id="all150" class="page" style="display:none;" data-title="Betrodda organisationer">
+<!-- === Kryss-test: Vilken organisation passar dig? === -->
+<div id="test" class="page" style="display: none;" data-title="Test">
+    <section class="test-section">
+      <h2>Vilken organisation passar dig?</h2>
+      <form id="match-test">
+  
+        <div class="question">
+          <p>Vad brinner du mest för?</p>
+          <label><input type="checkbox" name="interest" value="Barn & Unga"> Barn & ungdomar</label><br>
+          <label><input type="checkbox" name="interest" value="Djur & Naturvård"> Djur & natur</label><br>
+          <label><input type="checkbox" name="interest" value="Psykisk hälsa & Socialt stöd"> Psykisk hälsa</label><br>
+          <label><input type="checkbox" name="interest" value="Sjukvård & Forskning"> Forskning & sjukvård</label><br>
+          <label><input type="checkbox" name="interest" value="Samhälle & Mänskliga rättigheter"> Mänskliga rättigheter</label>
+        </div>
+  
+        <div class="question">
+          <p>Hur skulle du helst bidra?</p>
+          <label><input type="checkbox" name="contribution" value="Funktionsvariation & Inkludering"> Volontärarbete</label><br>
+          <label><input type="checkbox" name="contribution" value="Utbildning & Forskning"> Sprida kunskap</label><br>
+          <label><input type="checkbox" name="contribution" value="Katastrofhjälp & Humanitära insatser"> Donera pengar</label>
+        </div>
 
-    <h1>Lista över De 150 största Hjälporganisationerna i Sverige</h1>
+        <div class="question">
+            <p>Vilken typ av påverkan vill du helst se?</p>
+            <label><input type="checkbox" name="impact" value="Miljö & Natur"> Skydda miljön och djur</label><br>
+            <label><input type="checkbox" name="impact" value="Katastrofhjälp & Humanitära insatser"> Snabb hjälp vid kris</label><br>
+            <label><input type="checkbox" name="impact" value="Utbildning & Forskning"> Långsiktig samhällsförändring</label>
+          </div>
+  
+        <button type="submit">Se mina matchningar</button>
+      </form>
+  
+      <div id="test-result" style="margin-top: 20px;"></div>
+    </section>
+  </div>
+
+        <div id="all150" class="page" style="display:none;" data-title="Betrodda organisationer">
+
+    <h1>De 150 största Hjälporganisationerna med 90-konto</h1>
+
 
     <!-- Kategorifilter -->
     <div class="filter-container">
@@ -147,31 +214,22 @@
             <option value="Svenska Stadsmissioner">Svenska Stadsmissioner</option>
             <option value="Övrigt">Övrigt</option>
         </select>
+        
+        <div class="search-container">
+            
+            <input type="text" class="search-input" placeholder="Skriv här...">
+            <button class="search-button">Sök organisation</button>
+        </div>
     </div>
-
+   
     <!-- Container för organisationer -->
-    <div id="org-container"></div>
-
-<div id="contact" class="page" style="display:none;" data-title="Kontakt">
-
-        <section class="contact-form-section">
-
-            <h2>Kontakta oss</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-                <label for="name">Ditt namn:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Din e-postadress:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Ditt meddelande:</label>
-                <textarea id="message" name="message" required></textarea>
-        
-                <button type="submit">Skicka meddelande</button>
-            </form>
-        </section> 
-</div>
+    <div id="org-container"></div> </div>
+</main>
+    <footer class="site-footer">
+        <p>&copy; 2025 Hjälporganisationer. Alla rättigheter förbehållna.</p>
+    </footer>
     
         <script src="main.js"></script>
+        </div>
 </body>
 </html>
