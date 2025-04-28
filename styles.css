@@ -373,19 +373,6 @@ section {
     text-decoration: underline;
 }
 
-/* Responsiv design */
-@media screen and (max-width: 768px) {
-    .card {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .card {
-        width: 100%;
-    }
-}
-
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -458,4 +445,88 @@ section {
     margin-top: 40px;
     font-size: 14px;
     border-top: 1px solid #ddd;
+}
+
+/* Mobil stil */
+
+/* Media queries för mobil */
+@media screen and (max-width: 768px) {
+  /* Navigationsfältet */
+  .navbar {
+    padding: 10px;
+
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .nav-button{
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    
+  }
+  .menu-button{
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    margin: 5px;
+  } 
+  /* Kort-sektion */
+  .cards-section {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  
+  /* Filter och sökning */
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+  
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .search-input {
+    width: calc(100% - 100px);
+  }
+
+  .search-button {
+    margin-top: 15px;
+  }
+  
+  /* Organisationskort */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Kontaktformulär */
+  .contact-form-container {
+    padding: 10px;
+  }
+  
+}
+
+/* Extra små skärmar */
+@media screen and (max-width: 480px) {
+  .nav-button, .menu-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .side-menu {
+    width: 80%;
+    right: -100%;
+  }
 }
