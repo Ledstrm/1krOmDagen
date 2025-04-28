@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log("Kontaktsida finns:", document.querySelector("#contact") !== null);
   console.log("Kontaktformulär finns:", document.querySelector("#contactForm") !== null);
-  
+   
+
   // === Menyfunktion ===
   const menuButton = document.getElementById("open-menu");
   const closeButton = document.getElementById("close-menu");
